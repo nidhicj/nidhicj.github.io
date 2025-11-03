@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home - Nidhi Joshi's portfolio. Welcome to my web development journey.">
+    <meta name="keywords" content="home, portfolio, web developer, front-end engineer">
+    <meta name="author" content="Nidhi Joshi">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alexjohnson.github.io/portfolio/home.html">
+    <meta property="og:title" content="Home - Nidhi Joshi Portfolio">
+    <meta property="og:description" content="Welcome to my portfolio. Explore my projects and experience.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="https://alexjohnson.github.io/portfolio/home.html">
+    <meta property="twitter:title" content="Home - Nidhi Joshi Portfolio">
+    <meta property="twitter:description" content="Welcome to my portfolio. Explore my projects and experience.">
+    
+    <title>Home - Nidhi Joshi Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <header class="profile-header" role="banner">
+        <div class="container">
+            <nav aria-label="Breadcrumb">
+                <a href="index.html" class="back-link" aria-label="Back to portfolio">← Back to Portfolio</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content" role="main">
+        <div class="container">
+            <article class="page-content">
+                <h1>Welcome</h1>
+                <p>Hello! I'm Nidhi Joshi, a Senior Front-End Engineer passionate about creating beautiful, accessible, and performant web experiences.</p>
+                
+                <section>
+                    <h2>What I Do</h2>
+                    <p>I specialize in building modern web applications using cutting-edge technologies. My focus is on:</p>
+                    <ul>
+                        <li>Creating responsive, mobile-first designs</li>
+                        <li>Ensuring accessibility and inclusive user experiences</li>
+                        <li>Optimizing performance for fast loading times</li>
+                        <li>Writing clean, maintainable code</li>
+                        <li>Implementing best practices for SEO and web standards</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>My Approach</h2>
+                    <p>Every project I work on is an opportunity to push the boundaries of what's possible on the web. I believe in:</p>
+                    <ul>
+                        <li><strong>User-Centric Design:</strong> Putting users first in every decision</li>
+                        <li><strong>Progressive Enhancement:</strong> Building experiences that work for everyone</li>
+                        <li><strong>Continuous Learning:</strong> Staying updated with the latest technologies and best practices</li>
+                        <li><strong>Collaboration:</strong> Working closely with designers, developers, and stakeholders</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Get in Touch</h2>
+                    <p>Feel free to explore my <a href="index.html">portfolio</a>, learn more <a href="about.html">about me</a>, or <a href="contact.html">reach out</a> if you'd like to collaborate.</p>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Nidhi Joshi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+</html>
+

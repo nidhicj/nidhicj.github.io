@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nidhi Joshi - Senior Front-End Engineer portfolio showcasing web development projects and skills">
+    <meta name="keywords" content="front-end engineer, web developer, portfolio, JavaScript, React, CSS">
+    <meta name="author" content="Nidhi Joshi">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alexjohnson.github.io/portfolio/">
+    <meta property="og:title" content="Nidhi Joshi - Senior Front-End Engineer">
+    <meta property="og:description" content="Senior Front-End Engineer | Building beautiful, accessible web experiences">
+    <meta property="og:image" content="https://alexjohnson.github.io/portfolio/data/profile-og.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://alexjohnson.github.io/portfolio/">
+    <meta property="twitter:title" content="Nidhi Joshi - Senior Front-End Engineer">
+    <meta property="twitter:description" content="Senior Front-End Engineer | Building beautiful, accessible web experiences">
+    <meta property="twitter:image" content="https://alexjohnson.github.io/portfolio/data/profile-og.jpg">
+    
+    <title>Nidhi Joshi - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="profile-header" role="banner">
+        <div class="container">
+            <div class="profile-info">
+                <div class="avatar-container">
+                    <img id="avatar" src="" alt="Nidhi Joshi profile picture" class="avatar">
+                </div>
+                <div class="profile-details">
+                    <div class="profile-name-row">
+                        <h1 id="profile-name" class="profile-name"></h1>
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" type="button">
+                            <span class="theme-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="profile-stats">
+                        <div class="stat-item">
+                            <span class="stat-value" id="posts-count">0</span>
+                            <span class="stat-label">posts</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value" id="followers-count">0</span>
+                            <span class="stat-label">followers</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value" id="following-count">0</span>
+                            <span class="stat-label">following</span>
+                        </div>
+                    </div>
+                    <div class="profile-bio">
+                        <p id="profile-bio"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content" role="main">
+        <div class="container">
+            <nav class="grid-nav" aria-label="Portfolio navigation">
+                <div id="tiles-grid" class="tiles-grid" role="list">
+                    <!-- Tiles will be dynamically inserted here -->
+                </div>
+            </nav>
+        </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Nidhi Joshi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+

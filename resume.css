@@ -1,0 +1,284 @@
+/* Resume-specific styles with ATS-friendly formatting */
+
+.resume-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.resume {
+    background: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.resume-header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 20px;
+}
+
+.resume-header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.resume-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.resume-contact span {
+    white-space: nowrap;
+}
+
+.resume-section {
+    margin-bottom: 30px;
+    page-break-inside: avoid;
+}
+
+.resume-section h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.resume-section h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-color);
+}
+
+.resume-section p {
+    margin-bottom: 12px;
+    color: var(--text-color);
+    text-align: justify;
+}
+
+.resume-section ul {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.resume-section li {
+    margin-bottom: 6px;
+    color: var(--text-color);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.skills-grid div {
+    color: var(--text-color);
+}
+
+.skills-grid strong {
+    font-weight: 600;
+}
+
+.experience-item {
+    margin-bottom: 25px;
+    page-break-inside: avoid;
+}
+
+.experience-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.experience-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.company {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.dates {
+    margin-left: auto;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.education-item {
+    margin-bottom: 20px;
+}
+
+.education-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.school {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.project-item {
+    margin-bottom: 20px;
+}
+
+.project-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-color);
+}
+
+/* Print styles - ATS-friendly */
+@media print {
+    * {
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+    }
+    
+    body {
+        font-size: 11pt;
+        line-height: 1.4;
+    }
+    
+    .profile-header,
+    .site-footer,
+    .back-link,
+    .theme-toggle {
+        display: none !important;
+    }
+    
+    .resume-container {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .resume {
+        padding: 0;
+    }
+    
+    .resume-header {
+        border-bottom: 2px solid #000;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    }
+    
+    .resume-header h1 {
+        font-size: 24pt;
+        margin-bottom: 8pt;
+    }
+    
+    .resume-contact {
+        font-size: 10pt;
+        gap: 10pt;
+    }
+    
+    .resume-section {
+        margin-bottom: 20pt;
+        page-break-inside: avoid;
+    }
+    
+    .resume-section h2 {
+        font-size: 14pt;
+        margin-bottom: 10pt;
+        border-bottom: 1pt solid #000;
+        padding-bottom: 3pt;
+    }
+    
+    .resume-section h3 {
+        font-size: 12pt;
+        margin-bottom: 5pt;
+    }
+    
+    .resume-section p,
+    .resume-section li {
+        font-size: 11pt;
+        margin-bottom: 4pt;
+    }
+    
+    .experience-item {
+        margin-bottom: 15pt;
+        page-break-inside: avoid;
+    }
+    
+    .experience-header {
+        margin-bottom: 6pt;
+    }
+    
+    .dates {
+        font-size: 10pt;
+    }
+    
+    /* Ensure no page breaks in awkward places */
+    ul {
+        page-break-inside: avoid;
+    }
+    
+    li {
+        page-break-inside: avoid;
+    }
+    
+    /* Optimize for ATS parsing */
+    .resume-contact span {
+        display: inline;
+    }
+    
+    .resume-contact span:not(:last-child)::after {
+        content: " | ";
+    }
+}
+
+/* Screen styles - responsive */
+@media (max-width: 768px) {
+    .resume-container {
+        padding: 20px 15px;
+    }
+    
+    .resume-header h1 {
+        font-size: 28px;
+    }
+    
+    .resume-contact {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+    
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .dates {
+        margin-left: 0;
+    }
+    
+    .education-details {
+        flex-direction: column;
+    }
+}
+

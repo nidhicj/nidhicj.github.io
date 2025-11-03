@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project details - Nidhi Joshi Portfolio">
+    <meta name="keywords" content="project, portfolio, web development">
+    <meta name="author" content="Nidhi Joshi">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alexjohnson.github.io/portfolio/project.html">
+    <meta property="og:title" content="Project - Nidhi Joshi Portfolio">
+    <meta property="og:description" content="View project details and information.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://alexjohnson.github.io/portfolio/project.html">
+    <meta property="twitter:title" content="Project - Nidhi Joshi Portfolio">
+    <meta property="twitter:description" content="View project details and information.">
+    
+    <title>Project - Nidhi Joshi Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <header class="profile-header" role="banner">
+        <div class="container">
+            <nav aria-label="Breadcrumb">
+                <a href="index.html" class="back-link" aria-label="Back to portfolio">← Back to Portfolio</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content" role="main">
+        <div class="container">
+            <article class="page-content" id="project-content">
+                <div class="loading-state">Loading project...</div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Nidhi Joshi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="project.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+</html>
+

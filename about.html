@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Nidhi Joshi - Senior Front-End Engineer with extensive experience in web development.">
+    <meta name="keywords" content="about, biography, front-end engineer, web developer, experience">
+    <meta name="author" content="Nidhi Joshi">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alexjohnson.github.io/portfolio/about.html">
+    <meta property="og:title" content="About - Nidhi Joshi Portfolio">
+    <meta property="og:description" content="Learn about Nidhi Joshi's background, skills, and experience as a Senior Front-End Engineer.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="https://alexjohnson.github.io/portfolio/about.html">
+    <meta property="twitter:title" content="About - Nidhi Joshi Portfolio">
+    <meta property="twitter:description" content="Learn about Nidhi Joshi's background, skills, and experience as a Senior Front-End Engineer.">
+    
+    <title>About - Nidhi Joshi Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <header class="profile-header" role="banner">
+        <div class="container">
+            <nav aria-label="Breadcrumb">
+                <a href="index.html" class="back-link" aria-label="Back to portfolio">← Back to Portfolio</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content" role="main">
+        <div class="container">
+            <article class="page-content">
+                <h1>About Me</h1>
+                <p>I'm a Senior Front-End Engineer with over 8 years of experience building web applications that users love. My journey in web development started with a passion for creating interactive experiences that combine beautiful design with solid functionality.</p>
+                
+                <section>
+                    <h2>Experience</h2>
+                    <p>Throughout my career, I've worked with startups and established companies to deliver high-quality web solutions. My experience spans:</p>
+                    <ul>
+                        <li>Building scalable front-end architectures</li>
+                        <li>Leading development teams and mentoring junior developers</li>
+                        <li>Collaborating with cross-functional teams including designers, product managers, and backend engineers</li>
+                        <li>Implementing design systems and component libraries</li>
+                        <li>Optimizing applications for performance and accessibility</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Skills</h2>
+                    <p>My technical expertise includes:</p>
+                    <ul>
+                        <li><strong>Languages:</strong> JavaScript (ES6+), TypeScript, HTML5, CSS3</li>
+                        <li><strong>Frameworks & Libraries:</strong> React, Vue.js, Angular, Next.js</li>
+                        <li><strong>Tools & Technologies:</strong> Git, Webpack, npm/yarn, REST APIs, GraphQL</li>
+                        <li><strong>Design:</strong> Responsive design, CSS Grid, Flexbox, CSS-in-JS</li>
+                        <li><strong>Testing:</strong> Jest, React Testing Library, Cypress</li>
+                        <li><strong>Other:</strong> PWA development, Performance optimization, Accessibility (WCAG)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Education</h2>
+                    <p>I hold a Bachelor's degree in Computer Science from a leading university, and I'm committed to continuous learning through online courses, conferences, and staying updated with the latest web technologies.</p>
+                </section>
+
+                <section>
+                    <h2>Interests</h2>
+                    <p>When I'm not coding, I enjoy contributing to open-source projects, reading about web development trends, and exploring new frameworks and tools. I'm also passionate about making the web more accessible to everyone.</p>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Nidhi Joshi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+</html>
+
